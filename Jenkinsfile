@@ -1,15 +1,15 @@
 @Library('kmenzli-shared-lib')_
 pipeline {
     agent any
-    environment {
-        IMAGE_NAME = 'webapp'
-        IMAGE_VERSION = 'v1'
-        DOCKER_PASSWORD = credentials ('docker-password')
-        DOCKER_USERNAME = 'kmenzli'
-        HOST_PORT = 80
-        DOCER_PORT = 80
-        IP_DOCKER = 'localhost'
-    }
+        environment {
+            IMAGE_NAME = 'webapp'
+            IMAGE_VERSION = 'v1'
+            DOCKER_PASSWORD = credentials ('docker-password')
+            DOCKER_USERNAME = 'kmenzli'
+            HOST_PORT = 80
+            DOCER_PORT = 80
+            IP_DOCKER = 'localhost'
+        }
 
        
         stage('Build') {
@@ -152,4 +152,3 @@ pipeline {
             }
         }
     }
-}
