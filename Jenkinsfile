@@ -1,4 +1,4 @@
-@Library('kmenzli-shared-lib')
+@Library('kmenzli-shared-lib')_
 pipeline {
     agent any
     environment {
