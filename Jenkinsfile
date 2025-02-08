@@ -54,7 +54,7 @@ pipeline {
                  }
             }
         }
-         stage('Deploy Staging ') {
+         stage('Deploy Preview ') {
             environment {
                 SERVER_IP = '35.180.86.203' 
                 SERVEUR_USERNAME = 'kmenzli'
