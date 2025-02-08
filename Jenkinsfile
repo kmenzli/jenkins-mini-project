@@ -11,7 +11,7 @@ pipeline {
         IP_DOCKER = 'localhost'
     }
 
-    stages {
+       
         stage('Build') {
             steps {
                 echo 'Building..'
