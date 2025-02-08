@@ -56,7 +56,7 @@ pipeline {
         }
          stage('Deploy Staging ') {
             environment {
-                SERVER_IP = 35.180.86.203 
+                SERVER_IP = '35.180.86.203' 
                 SERVEUR_USERNAME = 
             }
             steps {
@@ -86,7 +86,7 @@ pipeline {
          stage('Deploy Staging ') {
             
             environment {
-                SERVER_IP = 35.180.189.201
+                SERVER_IP = '35.180.189.201'
                 SERVEUR_USERNAME = 
             }
             steps {
@@ -116,7 +116,7 @@ pipeline {
          stage('Deploy Prod ') {
             when {expression {GIT_BRANCH == 'origin/prod'}}
             environment {
-                SERVER_IP = 35.180.39.149 
+                SERVER_IP = '35.180.39.149' 
                 SERVEUR_USERNAME = 
             }
             steps {
