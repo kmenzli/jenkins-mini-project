@@ -57,7 +57,7 @@ pipeline {
          stage('Deploy Staging ') {
             environment {
                 SERVER_IP = '35.180.86.203' 
-                SERVEUR_USERNAME = 
+                SERVEUR_USERNAME = 'kmenzli'
             }
             steps {
                 
@@ -87,7 +87,7 @@ pipeline {
             
             environment {
                 SERVER_IP = '35.180.189.201'
-                SERVEUR_USERNAME = 
+                SERVEUR_USERNAME =  'kmenzli'
             }
             steps {
                 echo 'Deploying....'
@@ -117,7 +117,7 @@ pipeline {
             when {expression {GIT_BRANCH == 'origin/prod'}}
             environment {
                 SERVER_IP = '35.180.39.149' 
-                SERVEUR_USERNAME = 
+                SERVEUR_USERNAME =  'kmenzli'
             }
             steps {
                 echo 'Deploying....'
